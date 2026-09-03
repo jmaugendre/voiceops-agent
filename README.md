@@ -81,9 +81,9 @@ The demo will track:
 ## Repository roadmap
 
 - [x] Define use case and architecture
-- [ ] Implement synthetic ERP + governed FastAPI tools
-- [ ] Add happy-path, ambiguous and backend-failure scenarios
-- [ ] Add automated backend tests
+- [x] Implement synthetic ERP + governed FastAPI tools (5 scenarios: happy path, missing fields, electrical risk, conflicting data, simulated backend failure)
+- [x] Add automated backend tests (22 tests: retrieval, validation, safety escalation, transactions)
+- [ ] Add knowledge base and versioned system prompt
 - [ ] Configure ElevenLabs agent and webhook tools
 - [ ] Add ElevenLabs simulation/tool-call tests
 - [ ] Deploy the API
