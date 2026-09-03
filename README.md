@@ -66,6 +66,14 @@ VoiceOps is designed to use current ElevenLabs Agents capabilities:
 - optional client tools for UI feedback;
 - conversation-level evaluation criteria.
 
+## Documentation
+
+- [`docs/architecture.md`](docs/architecture.md) -- system design, module layout, transaction lifecycle
+- [`docs/elevenlabs-setup.md`](docs/elevenlabs-setup.md) -- step-by-step ElevenLabs dashboard configuration (system prompt, knowledge base, webhook tools, testing)
+- [`docs/evaluation.md`](docs/evaluation.md) -- backend test results now; agent evaluation results once measured
+- [`prompts/system_prompt.md`](prompts/system_prompt.md) -- the versioned agent system prompt
+- [`knowledge/`](knowledge/) -- the synthetic field-service knowledge base
+
 ## Success criteria
 
 The demo will track:
@@ -83,7 +91,7 @@ The demo will track:
 - [x] Define use case and architecture
 - [x] Implement synthetic ERP + governed FastAPI tools (5 scenarios: happy path, missing fields, electrical risk, conflicting data, simulated backend failure)
 - [x] Add automated backend tests (22 tests: retrieval, validation, safety escalation, transactions)
-- [ ] Add knowledge base and versioned system prompt
+- [x] Add knowledge base and versioned system prompt
 - [ ] Configure ElevenLabs agent and webhook tools
 - [ ] Add ElevenLabs simulation/tool-call tests
 - [ ] Deploy the API
